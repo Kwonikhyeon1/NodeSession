@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('../include/title.ejs') %>
+
+    <link href="/css/common.css" rel="stylesheet" type="text/css">
+    <link href="/css/sign_up_form.css" rel="stylesheet" type="text/css">
+
+    <script src="/js/member.js"></script>
+
+</head>
+<body>
+    
+    <%- include('../include/header.ejs') %>
+    <%- include('../include/nav.ejs') %>
+
+    <article>
+        <div class="article_wrap">
+            <div class="title">
+                <h4>MODIFY FORM</h4>
+            </div>
+            <div class="form">
+                <form action="/member/modify_confirm" name="modify_form" method="post">
+                    <input type="hidden" name="m_no" value="<%= signinedMember.M_NO %>">
+                    <input type="text" name="m_id" value="<%= signinedMember.M_ID %>" readonly disabled><br>
+                    <input type="password" name="m_pw" value="******" readonly disabled><br>
+                    <input type="email" name="m_mail" value="<%= signinedMember.M_MAIL %>"><br>
+                    <input type="text" name="m_phone" value="<%= signinedMember.M_PHONE %>"><br>
+                    <input type="button" value="MODIFY" onclick="modifyForm();">
+                    <input type="reset" value="RESET">
+                </form>
+            </div>
+        </div>
+    </article>
+
+    <%- include('../include/footer.ejs') %>
+
+</body>
+</html>

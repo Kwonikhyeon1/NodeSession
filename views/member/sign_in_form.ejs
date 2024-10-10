@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('../include/title.ejs') %>
+
+    <link href="/css/common.css" rel="stylesheet" type="text/css">
+    <link href="/css/sign_up_form.css" rel="stylesheet" type="text/css">
+
+    <script src="/js/member.js"></script>
+
+</head>
+<body>
+    
+    <%- include('../include/header.ejs') %>
+    <%- include('../include/nav.ejs') %>
+
+    <article>
+        <div class="article_wrap">
+            <div class="title">
+                <h4>SIGN IN FORM</h4>
+            </div>
+            <div class="form">
+                <form action="/member/sign_in_confirm" name="sign_in_form" method="post">
+                    <input type="text" name="m_id" placeholder="INPUT MEMBER ID"><br>
+                    <input type="password" name="m_pw" placeholder="INPUT MEMBER PW"><br>
+                    <input type="button" value="SIGNIN" onclick="signInForm();">
+                    <input type="reset" value="RESET">
+                </form>
+            </div>
+        </div>
+    </article>
+
+    <%- include('../include/footer.ejs') %>
+
+</body>
+</html>

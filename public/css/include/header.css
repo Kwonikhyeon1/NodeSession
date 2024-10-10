@@ -1,0 +1,6 @@
+header > div.header_wrap {
+    height: 50px; line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(200, 200, 200, .5);
+}

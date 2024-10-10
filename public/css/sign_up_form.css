@@ -1,0 +1,23 @@
+article {
+    margin: 10px 0;
+}
+
+article .article_wrap {
+    width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+article .article_wrap .form input {
+    width: 300px;
+    padding: 10px;
+    margin: 3px;
+    border: 1px solid rgba(200, 200, 200, 1);
+    border-radius: 4px;
+    outline: none;
+}
+
+article .article_wrap .form input[type="button"],
+article .article_wrap .form input[type="reset"] {
+    width: 100px;
+}

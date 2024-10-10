@@ -1,0 +1,5 @@
+nav > div.nav_wrap {
+    height: 35px; line-height: 35px;
+    text-align: right;
+    border-bottom: 1px solid rgba(200, 200, 200, .5);
+}
